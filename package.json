@@ -1,6 +1,6 @@
 {
   "name": "npm-registry-readme-trim",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Trim the `readme` fields on npm registry document objects.",
   "main": "index.js",
   "scripts": {
