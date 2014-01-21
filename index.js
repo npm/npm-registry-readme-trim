@@ -41,6 +41,11 @@ function readmeTrim(doc) {
 }
 
 if (module === require.main) {
+  if (process.argv.length > 2) {
+    console.error('No args. Just pipe a doc to stdin, trimmed on stdout')
+    process.exit(1)
+  }
+
   var json = ''
   process.stdin.setEncoding('utf8')
   process.stdin.on('data', function(c) {
