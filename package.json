@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Trim the `readme` fields on npm registry document objects.",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "node test.js"
   },

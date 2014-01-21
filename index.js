@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var README_MAXLEN = 64 * 1024
 
 module.exports = readmeTrim
@@ -36,4 +38,17 @@ function readmeTrim(doc) {
   doc.readmeFilename = readmeFilename
 
   return changed
+}
+
+if (module === require.main) {
+  var json = ''
+  process.stdin.setEncoding('utf8')
+  process.stdin.on('data', function(c) {
+    json += c
+  })
+  process.stdin.on('end', function() {
+    var obj = JSON.parse(json)
+    readmeTrim(obj)
+    console.log(JSON.stringify(obj, null, 2))
+  })
 }
