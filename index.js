@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-var README_MAXLEN = 64 * 1024
-
 module.exports = readmeTrim
+
+var README_MAXLEN = 64 * 1024
 
 function readmeTrim(doc) {
   var changed = false
