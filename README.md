@@ -18,3 +18,9 @@ if (changed) {
   // everything was already in the right places, nothing to do
 }
 ```
+
+Or on the CLI, where it's JSON in, JSON out.
+
+```bash
+cat doc.json | npm-registry-readme-trim > trimmed.json
+```
