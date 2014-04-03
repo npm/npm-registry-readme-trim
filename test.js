@@ -1,6 +1,6 @@
 var trim = require('./')
 var long = new Array(1024 * 1024).join('kinda long readme, dude.\n')
-var short = long.slice(0, 64 * 1024)
+var short = long.slice(0, 128 * 1024)
 var doc = {
   name: 'foo',
   readme: 'this is my readme',
